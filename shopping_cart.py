@@ -5,7 +5,7 @@ def display(cart):
         print("You have no items in your cart")
     else:
         for name, value in cart.items():
-            print((f"\t{name} - ${value["price"]:.2f} x {value["quantity"]}"))
+            print((f"\t{name} - ${value['price']:.2f} x {value['quantity']}"))
             total += value["price"] * value["quantity"]
     print(f"total: ${total:.2f}")
     
